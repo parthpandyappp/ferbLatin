@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Ferb Latin</title>
+  </head>
+  <body onload="typeWriter()">
+    <!-- Navigation -->
+    <nav class="navigation">
+      <div class="nav-brand">
+        <p>Ferb latin</p>
+      </div>
+
+      <div class="nav-pills">
+        <h1>
+          <a
+            href="https://github.com/parthpandyappp/bananaProcessor/"
+            style="text-decoration: none; color: white"
+            ><i style="color: black" class="fa fa-github"></i
+          ></a>
+        </h1>
+      </div>
+    </nav>
+
+    <div class="container container-center">
+      <img src="./src/pandf.png" />
+
+      <div
+        style="box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37)"
+        id="type"
+      ></div>
+      <textarea
+        placeholder="Write English text to convert it to ferb's latin!"
+        id="input"
+      ></textarea>
+
+      <button class="btn" onclick="clickHandler()">Trigger Ferb Engine</button>
+
+      <div
+        id="output"
+        contenteditable="true"
+        data-text="Once the translation is done, it will render here"
+      ></div>
+      <hr style="margin: 2rem" />
+      <footer>
+        <p
+          style="text-align: center; font-family: Roboto Mono; line-height: 1.5"
+        >
+          Developed &lt;/&gt; with love by Parth Pandya
+        </p>
+      </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./src/app.js" type="text/javascript"></script>
+  </body>
+</html>

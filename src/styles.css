@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Mono:wght@200&display=swap");
+
+:root {
+  --primary-color: #e0e7ff;
+  --bar-color: #eef2ff;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: var(--primary-color);
+}
+
+.navigation {
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--bar-color);
+}
+
+.navigation .nav-brand {
+  color: black;
+  /* float: left; */
+  font-weight: 1000;
+}
+
+.navigation .nav-pills {
+  float: right;
+  color: black;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container-center {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  height: 250px;
+  width: 250px;
+}
+
+.btn {
+  background: none;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  letter-spacing: 3px;
+  cursor: pointer;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+textarea {
+  display: block;
+  margin: 1rem;
+  height: 7rem;
+  width: 40rem;
+  text-align: center;
+  border-radius: 1.1rem;
+  border-color: black;
+  padding: 4rem;
+  min-width: 500px;
+  max-width: 100%;
+  min-height: 50px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#output {
+  display: block;
+  margin: 1rem;
+  height: 7rem;
+  width: 40rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 1.1rem;
+  border-color: black;
+  padding: 4rem;
+  min-width: 500px;
+  max-width: 100%;
+  min-height: 50px;
+  background: white;
+  color: black;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+[contentEditable="true"]:empty:not(:focus):before {
+  content: attr(data-text);
+}
+
+@media only screen and (max-width: 600px) {
+  textarea {
+    width: 25rem;
+    min-width: 250px;
+  }
+  #output {
+    width: 25rem;
+    min-width: 250px;
+  }
+}
