@@ -95,11 +95,11 @@ textarea {
 
 @media only screen and (max-width: 600px) {
   textarea {
-    width: 25rem;
-    min-width: 250px;
+    width: 10rem;
+    min-width: 150px;
   }
   #output {
-    width: 25rem;
-    min-width: 250px;
+    width: 10rem;
+    min-width: 150px;
   }
 }
